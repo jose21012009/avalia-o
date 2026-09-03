@@ -1,23 +1,28 @@
-// Efeito de Revelação ao Rolar a Página (Scroll Animation)
-document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".text-card, .image-placeholder");
+// Aguarda o carregamento do DOM para garantir que os elementos existem
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    const navLinks = document.querySelectorAll('#navMenu a');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
-            }
-        });
-    }, {
-        threshold: 0.15
+    // Abre e fecha o menu ao clicar no botão hambúrguer (Mobile)
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        
+        // Altera o ícone visual do botão conforme o estado
+        if (navMenu.classList.contains('active')) {
+            menuToggle.textContent = '✕';
+        } else {
+            menuToggle.textContent = '☰';
+        }
     });
 
-    cards.forEach(card => {
-        // Configuração inicial oculta para animação
-        card.style.opacity = "0";
-        card.style.transform = "translateY(20px)";
-        card.style.transition = "all 0.6s ease-out";
-        observer.observe(card);
+    // Fecha o menu automaticamente quando o usuário clica em um link de navegação
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                menuToggle.textContent = '☰';
+            }
+        });
     });
 });

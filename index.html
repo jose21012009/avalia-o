@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Cabeçalho e Navegação -->
     <header>
         <div class="logo">Missão Marte 2026</div>
-        <nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+        <nav id="navMenu">
             <ul>
                 <li><a href="#visao-geral">Visão Geral</a></li>
                 <li><a href="#habitacao">Habitação</a></li>
@@ -19,67 +22,77 @@
         </nav>
     </header>
 
-    <main>
-        <section id="hero">
+    <!-- Seção Hero / Introdução -->
+    <section class="hero">
+        <div class="hero-content">
             <h1>A Vida no Planeta Vermelho</h1>
-            <p>Descubra como a humanidade se adaptará ao seu novo lar espacial.</p>
-        </section>
+            <p>Explore como a humanidade se adaptará, construirá e prosperará em Marte.</p>
+            <a href="#visao-geral" class="btn">Iniciar Exploração</a>
+        </div>
+    </section>
 
-        <section id="visao-geral" class="content-section">
+    <main>
+        <!-- Visão Geral do Planeta -->
+        <section id="visao-geral" class="section-card">
             <h2>Visão Geral do Planeta</h2>
-            <div class="grid">
-                <div class="text-card">
-                    <p>Marte é um deserto frio e árido. Sua atmosfera fina é composta principalmente de dióxido de carbono. A paisagem é marcada por imensos vulcões, como o Olympus Mons, e desfiladeiros profundos. O clima apresenta temperaturas extremas que podem cair para menos de -120°C durante a noite.</p>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>Marte é um deserto frio e árido, com uma atmosfera tênue composta majoritariamente por dióxido de carbono. A paisagem é marcada por gigantescos vulcões, como o Olympus Mons, e profundos canyons.</p>
+                    <p><strong>Clima:</strong> As temperaturas médias giram em torno de -62°C, podendo cair para -140°C no inverno polar. Tempestades de poeira globais podem cobrir o planeta por semanas.</p>
                 </div>
-                <!-- CORREÇÃO: Link direto para imagem do planeta Marte -->
-                <div class="image-placeholder" style="background-image: url('https://unsplash.com');">
-                    <span>Clima e Paisagem Marciana</span>
+                <div class="image-placeholder bg-marte">
+                    <span>[Imagem: Paisagem de Marte]</span>
                 </div>
             </div>
         </section>
 
-        <section id="habitacao" class="content-section">
+        <!-- Habitação -->
+        <section id="habitacao" class="section-card">
             <h2>Habitação (Casas)</h2>
-            <div class="grid invert">
-                <div class="text-card">
-                    <p>Para proteger os colonos da radiação cósmica mortal e das tempestades de poeira, as habitações serão construídas utilizando tubos de lava subterrâneos e impressoras 3D que utilizam o próprio solo marcial (regolito) como matéria-prima. Os domos de superfície contarão com blindagem dupla de água e polímeros.</p>
+            <div class="content-grid reverse">
+                <div class="text-content">
+                    <p>Para proteger os colonos da radiação cósmica prejudicial e do frio extremo, as casas em Marte serão verdadeiras fortalezas de engenharia.</p>
+                    <p><strong>Estruturas:</strong> Construções subterrâneas, habitats impressos em 3D utilizando o próprio solo marciano (regolito) e cúpulas infláveis com camadas de gelo protetoras contra a radiação solar.</p>
                 </div>
-                <!-- CORREÇÃO: Link direto para imagem de base espacial/arquitetura futurista -->
-                <div class="image-placeholder" style="background-image: url('https://unsplash.com');">
-                    <span>Módulos de Sobrevivência</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="alimentacao" class="content-section">
-            <h2>Alimentação em Marte</h2>
-            <div class="grid">
-                <div class="text-card">
-                    <p>A culinária marciana dependerá de estufas hidropônicas automatizadas e fazendas verticais com iluminação LED artificial. A dieta será baseada em vegetais ricos em nutrientes (como batatas e microverdes) e carne cultivada em laboratório, garantindo a autossustentabilidade sem depender da Terra.</p>
-                </div>
-                <!-- CORREÇÃO: Link direto para imagem de plantas em laboratório/estufa -->
-                <div class="image-placeholder" style="background-image: url('https://unsplash.com');">
-                    <span>Estufas Hidropônicas</span>
+                <div class="image-placeholder bg-habitat">
+                    <span>[Imagem: Domos Marcianos]</span>
                 </div>
             </div>
         </section>
 
-        <section id="vestuario" class="content-section">
-            <h2>Vestuário Espacial</h2>
-            <div class="grid invert">
-                <div class="text-card">
-                    <p><strong>Ambientes Externos:</strong> Trajes pressurizados avançados, leves e flexíveis, com sistemas integrados de suporte à vida e proteção térmica contra o frio extremo.<br><br><strong>Ambientes Internos:</strong> Roupas feitas de tecidos inteligentes antimicrobianos que regulam a temperatura corporal e resistem à estática da poeira marciana.</p>
+        <!-- Alimentação -->
+        <section id="alimentacao" class="section-card">
+            <h2>Alimentação (Comida)</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>A dependência de suprimentos da Terra é inviável a longo prazo. A culinária marciana será essencialmente tecnológica e baseada no cultivo local.</p>
+                    <p><strong>Produção:</strong> Estufas hidropônicas e aeropônicas automatizadas produzirão vegetais ricos em nutrientes. Laboratórios avançados farão a síntese de carne cultivada e proteínas à base de insetos ou algas (como a spirulina).</p>
                 </div>
-                <!-- CORREÇÃO: Link direto para imagem de astronauta/traje espacial -->
-                <div class="image-placeholder" style="background-image: url('https://unsplash.com');">
-                    <span>Design de Trajes</span>
+                <div class="image-placeholder bg-comida">
+                    <span>[Imagem: Estufas Hidropônicas]</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vestuário -->
+        <section id="vestuario" class="section-card">
+            <h2>Vestuário (Roupas)</h2>
+            <div class="content-grid reverse">
+                <div class="text-content">
+                    <p>O guarda-roupa em Marte divide-se estritamente entre a sobrevivência no exterior e o conforto no interior dos habitats.</p>
+                    <p><strong>Ambiente Externo:</strong> Trajes espaciais pressurizados de alta mobilidade, com blindagem térmica contra o frio absoluto e proteção interna contra radiação.</p>
+                    <p><strong>Ambiente Interno:</strong> Roupas leves, feitas de tecidos antimicrobianos e reciclados, projetadas para o gerenciamento de suor na gravidade reduzida (38% da Terra).</p>
+                </div>
+                <div class="image-placeholder bg-roupas">
+                    <span>[Imagem: Trajes Espaciais]</span>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 Projeto Colonização de Marte. Desenvolvido para a Avaliação Prática.</p>
+        <p>&copy; 2026 Missão Marte. Desenvolvido para a Avaliação Prática.</p>
     </footer>
 
     <script src="script.js"></script>
