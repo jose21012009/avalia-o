@@ -1,100 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida em Marte - A Nova Fronteira</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vida em Marte - A Nova Fronteira</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho e Navegação -->
-    <header>
-        <div class="logo">Missão Marte 2026</div>
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
-        <nav id="navMenu">
-            <ul>
-                <li><a href="#visao-geral">Visão Geral</a></li>
-                <li><a href="#habitacao">Habitação</a></li>
-                <li><a href="#alimentacao">Alimentação</a></li>
-                <li><a href="#vestuario">Vestuário</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Cabeçalho e Navegação -->
+  <header>
+    <div class="logo">Missão Marte 2026</div>
+    <button id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">☰</button>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#visao-geral">Visão Geral</a></li>
+        <li><a href="#habitacao">Habitação</a></li>
+        <li><a href="#alimentacao">Alimentação</a></li>
+        <li><a href="#vestuario">Vestuário</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Seção Hero / Introdução -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>A Vida no Planeta Vermelho</h1>
-            <p>Explore como a humanidade se adaptará, construirá e prosperará em Marte.</p>
-            <a href="#visao-geral" class="btn">Iniciar Exploração</a>
+  <!-- Banner Principal -->
+  <section class="hero">
+    <h1>A Vida Humana no Planeta Vermelho</h1>
+    <p>Explore o planejamento científico para a colonização de Marte.</p>
+  </section>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <!-- Seção 1: Visão Geral -->
+    <section id="visao-geral" class="card-section">
+      <h2>Visão Geral do Planeta</h2>
+      <div class="content-grid">
+        <div class="text">
+          <p>Marte é um deserto frio e seco, com uma atmosfera rarefeita composta principalmente de dióxido de carbono. A temperatura média é de -62°C, e a paisagem é marcada por óxido de ferro, o que dá ao planeta sua cor avermelhada característica.</p>
         </div>
+        <div class="image-placeholder" style="background-image: url('https://unsplash.com');"></div>
+      </div>
     </section>
 
-    <main>
-        <!-- Visão Geral do Planeta -->
-        <section id="visao-geral" class="section-card">
-            <h2>Visão Geral do Planeta</h2>
-            <div class="content-grid">
-                <div class="text-content">
-                    <p>Marte é um deserto frio e árido, com uma atmosfera tênue composta majoritariamente por dióxido de carbono. A paisagem é marcada por gigantescos vulcões, como o Olympus Mons, e profundos canyons.</p>
-                    <p><strong>Clima:</strong> As temperaturas médias giram em torno de -62°C, podendo cair para -140°C no inverno polar. Tempestades de poeira globais podem cobrir o planeta por semanas.</p>
-                </div>
-                <div class="image-placeholder bg-marte">
-                    <span>[Imagem: Paisagem de Marte]</span>
-                </div>
-            </div>
-        </section>
+    <!-- Seção 2: Habitação -->
+    <section id="habitacao" class="card-section reverse">
+      <h2>Habitação (Casas)</h2>
+      <div class="content-grid">
+        <div class="text">
+          <p>Para proteger os humanos da radiação solar severa e das temperaturas extremas, as casas marciais serão construídas em formato de domos geodésicos usando regolito local (solo de Marte) impresso em 3D ou instaladas em tubos de lava subterrâneos.</p>
+        </div>
+        <div class="image-placeholder" style="background-image: url('https://unsplash.com');"></div>
+      </div>
+    </section>
 
-        <!-- Habitação -->
-        <section id="habitacao" class="section-card">
-            <h2>Habitação (Casas)</h2>
-            <div class="content-grid reverse">
-                <div class="text-content">
-                    <p>Para proteger os colonos da radiação cósmica prejudicial e do frio extremo, as casas em Marte serão verdadeiras fortalezas de engenharia.</p>
-                    <p><strong>Estruturas:</strong> Construções subterrâneas, habitats impressos em 3D utilizando o próprio solo marciano (regolito) e cúpulas infláveis com camadas de gelo protetoras contra a radiação solar.</p>
-                </div>
-                <div class="image-placeholder bg-habitat">
-                    <span>[Imagem: Domos Marcianos]</span>
-                </div>
-            </div>
-        </section>
+    <!-- Seção 3: Alimentação -->
+    <section id="alimentacao" class="card-section">
+      <h2>Alimentação (Comida)</h2>
+      <div class="content-grid">
+        <div class="text">
+          <p>A culinária marcial dependerá de estufas hidropônicas automatizadas e laboratórios biológicos. Os colonos consumirão vegetais de crescimento rápido (como batatas e microverdes) e proteínas cultivadas artificialmente a partir de células em biorreatores.</p>
+        </div>
+        <div class="image-placeholder" style="background-image: url('https://unsplash.com');"></div>
+      </div>
+    </section>
 
-        <!-- Alimentação -->
-        <section id="alimentacao" class="section-card">
-            <h2>Alimentação (Comida)</h2>
-            <div class="content-grid">
-                <div class="text-content">
-                    <p>A dependência de suprimentos da Terra é inviável a longo prazo. A culinária marciana será essencialmente tecnológica e baseada no cultivo local.</p>
-                    <p><strong>Produção:</strong> Estufas hidropônicas e aeropônicas automatizadas produzirão vegetais ricos em nutrientes. Laboratórios avançados farão a síntese de carne cultivada e proteínas à base de insetos ou algas (como a spirulina).</p>
-                </div>
-                <div class="image-placeholder bg-comida">
-                    <span>[Imagem: Estufas Hidropônicas]</span>
-                </div>
-            </div>
-        </section>
+    <!-- Seção 4: Vestuário -->
+    <section id="vestuario" class="card-section reverse">
+      <h2>Vestuário (Roupas)</h2>
+      <div class="content-grid">
+        <div class="text">
+          <p>No ambiente interno pressurizado, as roupas serão leves, respiráveis e antimicrobianas. Para o ambiente externo, os trajes espaciais de última geração serão biomiméticos, oferecendo pressurização mecânica direta, proteção contra radiação e alta mobilidade.</p>
+        </div>
+        <div class="image-placeholder" style="background-image: url('https://unsplash.com');"></div>
+      </div>
+    </section>
+  </main>
 
-        <!-- Vestuário -->
-        <section id="vestuario" class="section-card">
-            <h2>Vestuário (Roupas)</h2>
-            <div class="content-grid reverse">
-                <div class="text-content">
-                    <p>O guarda-roupa em Marte divide-se estritamente entre a sobrevivência no exterior e o conforto no interior dos habitats.</p>
-                    <p><strong>Ambiente Externo:</strong> Trajes espaciais pressurizados de alta mobilidade, com blindagem térmica contra o frio absoluto e proteção interna contra radiação.</p>
-                    <p><strong>Ambiente Interno:</strong> Roupas leves, feitas de tecidos antimicrobianos e reciclados, projetadas para o gerenciamento de suor na gravidade reduzida (38% da Terra).</p>
-                </div>
-                <div class="image-placeholder bg-roupas">
-                    <span>[Imagem: Trajes Espaciais]</span>
-                </div>
-            </div>
-        </section>
-    </main>
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2026 Missão Marte. Desenvolvido para a Avaliação Prática.</p>
+  </footer>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2026 Missão Marte. Desenvolvido para a Avaliação Prática.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
